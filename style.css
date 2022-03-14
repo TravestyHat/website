@@ -1,0 +1,126 @@
+:root {
+    --main-color: #444;
+    --maintext-color: #fff;
+    --current-color: orange;
+    --idle-color: steelblue;
+    --invalid-color: #333;
+}
+
+* {
+    background: var(--main-color);
+    color: var(--maintext-color);
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Utility stuff */
+.first {
+  margin-top: 80px;
+}
+h1, h2 {
+  color: var(--current-color);
+}
+
+.btn {
+  display: inline-block;
+  padding: 1rem 2rem;
+  background: var(--idle-color);
+  text-decoration: none;
+  border: none;
+  border-radius: 25px;
+  margin: 0 5px;
+  margin-top: 1rem;
+  font-size: 1.1rem;
+  transition: all 0.3s ease-in;
+}
+
+.btn:hover,
+.current {
+  background: var(--current-color);
+}
+
+.invalid,
+.invalid:hover {
+  background: var(--invalid-color);
+}
+
+/* Navbar */
+#navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  opacity: 0.1;
+  width: 100%;
+  height: 70px;
+  position: fixed;
+  top: 0px;
+  padding: 0 30px;
+  transition: 0.5s;
+  }
+
+  #navbar:hover {
+    opacity: 0.8;
+  }
+   
+  #navbar ul {
+    display: flex;
+    list-style: none;
+    float: right;
+  }
+  
+  #navbar ul li {
+    float: left;
+  }
+  
+  /* #navbar ul li a {
+    margin: 10px 5px;
+  } */
+
+  /* Index */
+  .bio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+    width: 40vw;
+    padding-top: 100px;
+  }
+
+  .bio p {
+    padding-top: 40px;
+    font-size: 1.3rem;
+  }
+
+  /* Resume */
+  .container {
+    max-width: 40vw;
+  }
+  #contact,
+  #skills,
+  #work,
+  #education {
+    margin: 0 0 1rem 2rem;
+  }
+
+  #skills ul li {
+    list-style-type: disc;
+  }
+  #references {
+    margin-left: 2rem;
+  }
+
+  .container ul {
+    margin: 0 0 0.5rem 1rem;
+  }
+
+  .container p {
+    margin: 0 0 0.5rem 1rem;
+  }
+
+  .container ul li {
+    list-style-type: none;
+  }
