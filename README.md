@@ -1,0 +1,4 @@
+# README
+
+## Importing FontAwesome
+- SOMETEXT
