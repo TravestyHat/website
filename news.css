@@ -1,0 +1,15 @@
+:root {
+    --main-color: #1976d2;
+    --pol-color:  #ff8f00;
+    --ent-color:  #4caf50;
+    --tech-color: #6a1b9a;
+    --sports-color: #c62828;
+    --light-color: #f3f3f3;
+    --dark-color: #333;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
